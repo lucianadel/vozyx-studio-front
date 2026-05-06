@@ -3,124 +3,589 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Vozyx Studio | Sua história em canção</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <main class="page-shell">
-    <!-- Hero fullscreen -->
-    <section class="hero-section">
-      <div class="hero-overlay"></div>
-      <div class="hero-copy">
-        <span class="brand-logo">vozyx.studio</span>
-        <h1>Sua história em canção</h1>
-        <p>Transformamos emoções reais em músicas inesquecíveis.</p>
-        <div class="hero-actions">
-          <a href="#samples" class="button button-secondary">🎵 Ouvir Amostras</a>
-          <a href="https://forms.gle/aWHTCz4dP2CtxGkS8" target="_blank" rel="noopener noreferrer" class="button button-primary">💜 Criar Minha Música</a>
+
+<main class="page-shell">
+
+  <!-- HERO -->
+  <section class="hero-section">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-copy">
+
+      <span class="brand-logo">
+        vozyx.studio
+      </span>
+
+      <h1>
+        Sua história em canção
+      </h1>
+
+      <p>
+        Transformamos emoções reais em músicas inesquecíveis.
+      </p>
+
+      <div class="hero-actions">
+
+        <a href="#audio-samples" class="button button-secondary">
+          🎵 Ouvir Amostras
+        </a>
+
+        <a href="#form" class="button button-primary">
+          💜 Criar Minha Música
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section section-steps" id="como-funciona">
+
+    <div class="section-header">
+
+      <span>
+        ✨ Como Funciona
+      </span>
+
+      <h2>
+        Seu caminho para uma música inesquecível
+      </h2>
+
+    </div>
+
+    <div class="steps-grid">
+
+      <!-- PASSO 1 -->
+      <div class="step-card">
+
+        <div class="step-number">1</div>
+
+        <div class="step-icon">📝</div>
+
+        <h3>
+          Conte sua história
+        </h3>
+
+        <p>
+          Preencha o formulário contando sua história,
+          emoção e estilo musical desejado.
+        </p>
+
+      </div>
+
+      <div class="step-connector"></div>
+
+      <!-- PASSO 2 -->
+      <div class="step-card">
+
+        <div class="step-number">2</div>
+
+        <div class="step-icon">✏️</div>
+
+        <h3>
+          Transformamos em música
+        </h3>
+
+        <p>
+          Nossa IA cria uma canção personalizada
+          inspirada nos seus sentimentos e memórias.
+        </p>
+
+      </div>
+
+      <div class="step-connector"></div>
+
+      <!-- PASSO 3 -->
+      <div class="step-card">
+
+        <div class="step-number">3</div>
+
+        <div class="step-icon">🎵</div>
+
+        <h3>
+          Receba sua música
+        </h3>
+
+        <p>
+          Você recebe uma música única,
+          emocionante e feita especialmente para você.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- AMOSTRAS -->
+  <section class="section section-audio-samples" id="audio-samples">
+
+    <div class="section-header">
+
+      <span>
+        🎧 Ouça Algumas Histórias
+      </span>
+
+      <h2>
+        Histórias virando música
+      </h2>
+
+    </div>
+
+    <div class="audio-samples-grid">
+
+      <!-- MÃE -->
+      <div class="audio-card">
+
+        <div class="audio-card-header">
+
+          <div class="audio-icon">💜</div>
+
+          <h3>
+            Para Minha Mãe
+          </h3>
+
         </div>
-      </div>
-    </section>
 
-    <!-- Como funciona -->
-    <section class="section section-process" id="como-fazemos">
-      <div class="section-header">
-        <span>Como funciona</span>
-        <h2>Um processo delicado e pessoal</h2>
-      </div>
-      <div class="process-grid">
-        <article class="process-card">
-          <div class="process-icon">1</div>
-          <h3>Você envia sua história</h3>
-          <p>Conte o momento que deseja transformar em melodia. Cada detalhe importa.</p>
-        </article>
-        <article class="process-card">
-          <div class="process-icon">2</div>
-          <h3>Criamos sua música</h3>
-          <p>Nossa IA poética e o time criativo moldam uma canção única e cinematográfica.</p>
-        </article>
-        <article class="process-card">
-          <div class="process-icon">3</div>
-          <h3>Você recebe sua canção personalizada</h3>
-          <p>Uma obra sonora feita para emocionar e marcar cada lembrança.</p>
-        </article>
-      </div>
-    </section>
+        <p>
+          Uma homenagem emocionante transformada em música.
+        </p>
 
-    <!-- Amostras -->
-    <section class="section section-samples" id="samples">
-      <div class="section-header">
-        <span>Amostras</span>
-        <h2>O poder da música que toca a alma</h2>
-      </div>
-      <div class="samples-grid">
-        <article class="sample-card">
-          <div class="sample-tag">Música para mãe</div>
-          <h3>Homenagem suave e eterna</h3>
-          <p>Uma melodia calorosa que celebra amor, cuidado e memórias afetivas.</p>
-        </article>
-        <article class="sample-card">
-          <div class="sample-tag">Homenagem pet</div>
-          <h3>Latidos e batidas do coração</h3>
-          <p>Uma canção para eternizar a conexão entre você e seu companheiro.</p>
-        </article>
-        <article class="sample-card">
-          <div class="sample-tag">História de amor</div>
-          <h3>Encontro, paixão e destino</h3>
-          <p>Uma trilha sonora íntima para a narrativa do seu amor mais verdadeiro.</p>
-        </article>
-      </div>
-      <div class="audio-player-card">
-        <div class="audio-copy">
-          <p>Ouça a sensação de uma canção feita sob medida.</p>
+        <div class="audio-player-wrapper">
+
+          <audio controls>
+            <source src="audio/mae.mp3" type="audio/mpeg">
+          </audio>
+
         </div>
-        <audio controls>
-          <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
-          Seu navegador não suporta o player de áudio.
-        </audio>
+
       </div>
-    </section>
 
-    <!-- Seção emocional -->
-    <section class="section section-emotional">
-      <blockquote>
-        “Cada história merece sua própria melodia.”
-      </blockquote>
-    </section>
+      <!-- PET -->
+      <div class="audio-card">
 
-    <!-- CTA final -->
-    <section class="section section-cta" id="cta">
-      <div class="cta-card">
-        <h2>Transforme seu momento em uma obra musical.</h2>
-        <p>Vozyx Studio cria canções que tocam a essência do seu sentimento.</p>
-        <a href="https://forms.gle/aWHTCz4dP2CtxGkS8" target="_blank" rel="noopener noreferrer" class="button button-primary button-cta">✨ Quero transformar minha história em música</a>
-      </div>
-    </section>
+        <div class="audio-card-header">
 
-    <!-- WhatsApp fixo -->
-    <a href="https://wa.me/5521992530081" target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="Fale com a gente no WhatsApp">
-      <span class="whatsapp-icon">💬</span>
-    </a>
+          <div class="audio-icon">🐾</div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-text">
-          <h4>vozyx.studio</h4>
-          <p>Transformamos histórias reais em músicas personalizadas.</p>
+          <h3>
+            Meu Melhor Amigo Pet
+          </h3>
+
         </div>
-        <div class="footer-links">
-          <a href="https://instagram.com/vozyx.studio" target="_blank" rel="noopener noreferrer" class="footer-link">
-            <span class="ig-icon">📷</span> Instagram
-          </a>
-          <a href="https://wa.me/5521992530081" target="_blank" rel="noopener noreferrer" class="footer-link">
-            <span class="wa-icon">💬</span> WhatsApp
-          </a>
+
+        <p>
+          Uma canção cheia de amor e memórias inesquecíveis.
+        </p>
+
+        <div class="audio-player-wrapper">
+
+          <audio controls>
+            <source src="audio/pet.mp3" type="audio/mpeg">
+          </audio>
+
         </div>
+
       </div>
-      <div class="footer-divider"></div>
-      <p class="footer-copy">© 2024 Vozyx Studio. Cada história merece sua própria melodia.</p>
-    </footer>
+
+      <!-- CASAL -->
+      <div class="audio-card">
+
+        <div class="audio-card-header">
+
+          <div class="audio-icon">💕</div>
+
+          <h3>
+            Nossa História
+          </h3>
+
+        </div>
+
+        <p>
+          Uma música romântica inspirada em um casal real.
+        </p>
+
+        <div class="audio-player-wrapper">
+
+          <audio controls>
+            <source src="audio/casal.mp3" type="audio/mpeg">
+          </audio>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA PEDIDO -->
+  <section class="section section-pedido" id="pedido">
+
+    <div class="pedido-wrapper">
+
+      <h2>
+        Pronto para transformar sua história?
+      </h2>
+
+      <p>
+        Clique abaixo e comece agora mesmo sua jornada musical.
+      </p>
+
+      <div class="pedido-buttons">
+
+        <a
+          href="https://forms.gle/aWHTCz4dP2CtxGkS8"
+          target="_blank"
+          class="btn-pedido"
+        >
+          🎵 Fazer Meu Pedido
+        </a>
+
+        <a
+          href="https://wa.me/5521992530081?text=Olá,%20vim%20pelo%20Vozyx%20Studio%20🎵%0A%0AGostaria%20de%20mais%20informações%20sobre%20transformar%20minha%20história%20em%20música.%0A%0AVocê%20pode%20tirar%20suas%20dúvidas%20diretamente%20com%20a%20atendente%20ou%20preencher%20o%20formulário%20de%20cadastro%20abaixo:%0A%0Ahttps://forms.gle/aWHTCz4dP2CtxGkS8"
+          target="_blank"
+          class="btn-whatsapp"
+        >
+          💬 Tirar dúvidas
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FRASE -->
+  <section class="section section-emotional">
+
+    <blockquote>
+      “Cada história merece sua própria melodia.”
+    </blockquote>
+
+  </section>
+
+  <!-- FORMULÁRIO -->
+  <section class="section section-form" id="form">
+
+    <div class="section-header">
+
+      <span>
+        Personalize sua música
+      </span>
+
+      <h2>
+        Conte sua história
+      </h2>
+
+    </div>
+
+    <form id="music-form" class="music-form">
+
+      <div class="form-group">
+
+        <label for="nome">
+          Nome completo *
+        </label>
+
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+        >
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="whatsapp">
+          WhatsApp *
+        </label>
+
+        <input
+          type="tel"
+          id="whatsapp"
+          name="whatsapp"
+          required
+        >
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="tipo">
+          Tipo de música *
+        </label>
+
+        <select id="tipo" name="tipo" required>
+
+          <option value="">
+            Selecione
+          </option>
+
+          <option value="Amor">
+            Amor
+          </option>
+
+          <option value="Mãe">
+            Mãe
+          </option>
+
+          <option value="Pet">
+            Pet
+          </option>
+
+          <option value="Casamento">
+            Casamento
+          </option>
+
+          <option value="Aniversário">
+            Aniversário
+          </option>
+
+          <option value="Outro">
+            Outro
+          </option>
+
+        </select>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="estilo">
+          Estilo musical *
+        </label>
+
+        <select id="estilo" name="estilo" required>
+
+          <option value="">
+            Selecione
+          </option>
+
+          <option value="Pop">
+            Pop
+          </option>
+
+          <option value="MPB">
+            MPB
+          </option>
+
+          <option value="Sertanejo">
+            Sertanejo
+          </option>
+
+          <option value="Acústico">
+            Acústico
+          </option>
+
+          <option value="Piano emocional">
+            Piano emocional
+          </option>
+
+          <option value="Outro">
+            Outro
+          </option>
+
+        </select>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="historia">
+          História da música *
+        </label>
+
+        <textarea
+          id="historia"
+          name="historia"
+          placeholder="Conte aqui a história que deseja transformar em música..."
+          required
+        ></textarea>
+
+      </div>
+
+      <button type="submit" class="button button-primary">
+        Criar Minha Música
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section section-cta" id="cta">
+
+    <div class="cta-card">
+
+      <h2>
+        Transforme seu momento em uma obra musical.
+      </h2>
+
+      <p>
+        Vozyx Studio cria canções que tocam
+        a essência do seu sentimento.
+      </p>
+
+      <a href="#form" class="button button-primary button-cta">
+        ✨ Quero transformar minha história em música
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- WHATSAPP FIXO -->
+  <a
+    href="https://wa.me/5521992530081"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-float"
+    title="Fale com a gente no WhatsApp"
+  >
+
+    <span class="whatsapp-icon">
+      💬
+    </span>
+
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <div class="footer-text">
+
+        <h4>
+          vozyx.studio
+        </h4>
+
+        <p>
+          Transformamos histórias reais em músicas personalizadas.
+        </p>
+
+      </div>
+
+      <div class="footer-links">
+
+        <a
+          href="https://instagram.com/vozyx.studio"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-link"
+        >
+          📷 Instagram
+        </a>
+
+        <a
+          href="https://wa.me/5521992530081"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-link"
+        >
+          💬 WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p class="footer-copy">
+      © 2024 Vozyx Studio.
+      Cada história merece sua própria melodia.
+    </p>
+
+  </footer>
+
+</main>
+
+<script>
+
+document
+  .getElementById('music-form')
+  .addEventListener('submit', async (e) => {
+
+    e.preventDefault();
+
+    const button = e.target.querySelector('button');
+
+    button.disabled = true;
+
+    button.textContent = 'Gerando pagamento...';
+
+    const formData = new FormData(e.target);
+
+    const data = {
+
+      itens: [
+        {
+          title: "Música Personalizada Vozyx",
+          quantity: 1,
+          unit_price: 20
+        }
+      ],
+
+      cliente: {
+        nome: formData.get('nome'),
+        whatsapp: formData.get('whatsapp')
+      }
+
+    };
+
+    try {
+
+      const response = await fetch(
+        'http://localhost:3333/criar-pagamento',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error('Erro na resposta do servidor');
+      }
+
+      const result = await response.json();
+
+      window.location.href = result.init_point;
+
+    } catch (error) {
+
+      alert('Não foi possível gerar o pagamento.');
+
+      button.disabled = false;
+
+      button.textContent = 'Criar Minha Música';
+
+    }
+
+  });
+
+</script>
+
+</body>
+</html>
