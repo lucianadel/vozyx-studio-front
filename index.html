@@ -292,6 +292,21 @@
 
       <div class="form-group">
 
+        <label for="email">
+          Email *
+        </label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+        >
+
+      </div>
+
+      <div class="form-group">
+
         <label for="tipo">
           Tipo de música *
         </label>
@@ -464,11 +479,6 @@
 
         </select>
 
-        <small>
-          Você pode misturar estilos ✨<br>
-          Exemplo: forró + pop romântico
-        </small>
-
       </div>
 
       <div class="form-group">
@@ -509,6 +519,21 @@
           id="historia"
           name="historia"
           placeholder="Conte aqui a história que deseja transformar em música..."
+          required
+        ></textarea>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="observacoes">
+          Observações *
+        </label>
+
+        <textarea
+          id="observacoes"
+          name="observacoes"
+          placeholder="Inclua detalhes importantes, nomes, datas ou preferências adicionais..."
           required
         ></textarea>
 
@@ -629,6 +654,8 @@ document
 
     const data = {
 
+      valor: 20,
+
       itens: [
         {
           title: "Música Personalizada Vozyx",
@@ -639,7 +666,16 @@ document
 
       cliente: {
         nome: formData.get('nome'),
-        whatsapp: formData.get('whatsapp')
+        whatsapp: formData.get('whatsapp'),
+        email: formData.get('email') || ''
+      },
+
+      pedido: {
+        tipo: formData.get('tipo'),
+        estilo: formData.get('estilo'),
+        voz: formData.get('voz'),
+        historia: formData.get('historia'),
+        observacoes: formData.get('observacoes') || ''
       }
 
     };

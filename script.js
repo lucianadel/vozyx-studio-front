@@ -27,6 +27,7 @@ document
     const formData = new FormData(form);
 
     const data = {
+      valor: 20,
       itens: [
         {
           title: 'Música Personalizada Vozyx',
@@ -44,7 +45,8 @@ document
         tipo: formData.get('tipo'),
         estilo: formData.get('estilo'),
         voz: formData.get('voz'),
-        historia: formData.get('historia')
+        historia: formData.get('historia'),
+        observacoes: formData.get('observacoes') || ''
       }
     };
 
