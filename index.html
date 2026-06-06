@@ -539,6 +539,8 @@
 
       </div>
 
+      <p id="checkout-status" class="checkout-status" hidden></p>
+
       <button type="submit" class="button button-primary">
         Criar Minha Música
       </button>
@@ -636,84 +638,7 @@
 
 </main>
 
-<script>
-
-document
-  .getElementById('music-form')
-  .addEventListener('submit', async (e) => {
-
-    e.preventDefault();
-
-    const button = e.target.querySelector('button');
-
-    button.disabled = true;
-
-    button.textContent = 'Gerando pagamento...';
-
-    const formData = new FormData(e.target);
-
-    const data = {
-
-      valor: 20,
-
-      itens: [
-        {
-          title: "Música Personalizada Vozyx",
-          quantity: 1,
-          unit_price: 20
-        }
-      ],
-
-      cliente: {
-        nome: formData.get('nome'),
-        whatsapp: formData.get('whatsapp'),
-        email: formData.get('email') || ''
-      },
-
-      pedido: {
-        tipo: formData.get('tipo'),
-        estilo: formData.get('estilo'),
-        voz: formData.get('voz'),
-        historia: formData.get('historia'),
-        observacoes: formData.get('observacoes') || ''
-      }
-
-    };
-
-    try {
-
-      const response = await fetch(
-        'https://vozyx-studio-backend-production.up.railway.app/criar-pagamento',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(data)
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error('Erro na resposta do servidor');
-      }
-
-      const result = await response.json();
-
-      window.location.href = result.init_point;
-
-    } catch (error) {
-
-      alert('Não foi possível gerar o pagamento.');
-
-      button.disabled = false;
-
-      button.textContent = 'Criar Minha Música';
-
-    }
-
-  });
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>

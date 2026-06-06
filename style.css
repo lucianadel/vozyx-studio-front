@@ -1770,6 +1770,16 @@ button, input, textarea {
   resize: vertical;
 }
 
+.checkout-status {
+  margin: 0 0 1rem;
+  padding: 12px 16px;
+  border: 1px solid var(--glass-strong);
+  border-radius: 12px;
+  background: var(--glass);
+  color: var(--soft-white);
+  line-height: 1.5;
+}
+
 .music-form button {
   width: 100%;
   padding: 16px 24px;
