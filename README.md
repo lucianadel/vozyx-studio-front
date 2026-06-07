@@ -8,19 +8,13 @@ Frontend estatico da Vozyx Studio.
 - `imagens/`
 - `index.html`
 - `style.css`
-- `script.js`
 - `README.md`
 - `.gitignore`
 
-## Checkout
+## Pedido
 
-O formulario envia os dados para a API externa configurada em `script.js`, por meio de `API_BASE_URL`.
-
-Endpoint usado pelo frontend:
-
-```text
-https://vozyx-studio-backend-production.up.railway.app/criar-pagamento
-```
+O site direciona o pedido para um Google Forms e o contato para WhatsApp.
+O pagamento e enviado manualmente por link do Mercado Pago.
 
 ## Deploy
 
